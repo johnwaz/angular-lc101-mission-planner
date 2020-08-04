@@ -34,8 +34,8 @@ export class EquipmentComponent implements OnInit {
      return this.maximumAllowedMass - this.cargoMass <= 200;
    }
 
-   disableButton(item) {
-    return item.mass + this.cargoMass > this.maximumAllowedMass || this.cargoHold.length >= this.maxItems;
+   disableButton(item: object) {
+    return item['mass'] + this.cargoMass > this.maximumAllowedMass || this.cargoHold.length >= this.maxItems;
    }
    
 }
