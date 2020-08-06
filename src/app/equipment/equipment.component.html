@@ -4,7 +4,7 @@
         <li *ngFor="let item of equipmentItems">
             <!-- "Add to Cargo Hold" button goes here. -->
             <button (click)="nearCapacity = addItem(item); clickCount(item);" [disabled]="disableButton(item)" [class.active]="activeButtons(item)">Add to Cargo Hold</button>
-            {{item.name}}, {{item.mass}} kg  {{item.count}}
+            {{item.name}}, {{item.mass}} kg,  {{item.count}} item(s)
         </li>
     </ol>
 </div>

@@ -67,7 +67,7 @@ export class EquipmentComponent implements OnInit {
      if (item.count >= 1) {
        item.count --;
      }
-     if (this.maximumAllowedMass === 2000 && this.cargoMass === 0) {
+     if (this.maximumAllowedMass - this.cargoMass > 200) {
        this.nearCapacity = false;
      }
    }
