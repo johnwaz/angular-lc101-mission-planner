@@ -3,6 +3,10 @@
     width: auto;
 }
 
+.equipmentDisplay {
+    width: 25%;
+}
+
 button {
     margin: 2px;
     cursor: pointer;
@@ -10,6 +14,10 @@ button {
 
 h3 {
     text-align: center;
+}
+
+li:hover {
+    cursor: pointer;
 }
 
 /* Add an 'active' class to style the background of the 'Add to Cargo Hold' buttons. */
