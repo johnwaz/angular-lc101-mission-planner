@@ -60,5 +60,16 @@ export class EquipmentComponent implements OnInit {
      this.cargoMass = 0;
      this.nearCapacity = false;
    }
+
+   removeEquipmentItems(item) {
+     this.cargoHold.splice(this.cargoHold.indexOf(item), 1);
+     this.cargoMass = this.cargoMass - item.mass
+     if (item.count >= 1) {
+       item.count --;
+     }
+     if (this.maximumAllowedMass === 2000 && this.cargoMass === 0) {
+       this.nearCapacity = false;
+     }
+   }
    
 }
